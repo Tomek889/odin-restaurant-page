@@ -1,5 +1,9 @@
 export default function loadHome() {
+    const content = document.querySelector('#content');
     content.innerHTML = '';
+
+    let div = document.createElement('div');
+    div.classList.add('home');
 
     let heading = document.createElement('h2');
     heading.textContent = 'Welcome to our restaurant!';
@@ -10,7 +14,8 @@ export default function loadHome() {
     let p2 = document.createElement('p');
     p2.textContent = 'Open every day from 12:00 PM to 10:00 PM - come hungry!';
 
-    content.appendChild(heading);
-    content.appendChild(p1);
-    content.appendChild(p2);
+    div.appendChild(heading);
+    div.appendChild(p1);
+    div.appendChild(p2);
+    content.appendChild(div);
 }
