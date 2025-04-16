@@ -5,7 +5,7 @@ export default function loadAbout() {
     let div = document.createElement('div');
     div.classList.add('about');
 
-    let heading = document.createElement('h2');
+    let heading = document.createElement('h1');
     heading.textContent = 'About Us';
 
     let p1 = document.createElement('p');

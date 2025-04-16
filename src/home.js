@@ -5,7 +5,7 @@ export default function loadHome() {
     let div = document.createElement('div');
     div.classList.add('home');
 
-    let heading = document.createElement('h2');
+    let heading = document.createElement('h1');
     heading.textContent = 'Welcome to our restaurant!';
 
     let p1 = document.createElement('p');
