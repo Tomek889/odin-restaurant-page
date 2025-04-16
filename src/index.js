@@ -1,30 +1,15 @@
-import "./styles.css";
+import './styles.css';
+import loadHome from './home.js';
+import loadMenu from './menu.js';
+import loadAbout from './about.js';
 
-function showHome() {
-    const content = document.querySelector("#content");
+const homeButton = document.querySelector('#home');
+const menuButton = document.querySelector('#menu');
+const aboutButton = document.querySelector('#about');
+const content = document.querySelector('#content');
 
-    content.innerHTML = "";
+homeButton.addEventListener('click', loadHome);
+menuButton.addEventListener('click', loadMenu);
+aboutButton.addEventListener('click', loadAbout);
 
-    let heading = document.createElement("h2");
-    heading.textContent = "Welcome to our restaurant!";
-
-    let p1 = document.createElement("p");
-    p1.textContent = "Experience delicious food made with love and the freshest ingredients. Whether you're here for a cozy dinner or a quick bite, we're excited to serve you.";
-
-    let p2 = document.createElement("p");
-    p2.textContent = "Open every day from 12:00 PM to 10:00 PM - come hungry!";
-
-    content.appendChild(heading);
-    content.appendChild(p1);
-    content.appendChild(p2);
-}
-
-function showMenu() {
-
-}
-
-function showAbout() {
-
-}
-
-showHome();
+loadHome();
