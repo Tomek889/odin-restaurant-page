@@ -54,25 +54,41 @@ header nav {
 }
 
 body {
-    background-color: #86A788;
+    background-color: #2C3333;
     text-align: center;
+}
+
+#content {
+    margin: 0px 50px;
 }
 
 button {
     margin: 0px 8px;
     width: 100px;
     height: 50px;
-    background-color: #FFFDEC;
-    border: 2px solid #FFCFCF;
+    background-color: #395B64;
+    border: 2px solid #A5C9CA;
     border-radius: 10px;
-    color: #86A788;
+    color: #E7F6F2;
+    margin-bottom: 20px;
 }
 
-p {
-    color: #FFE2E2;
+h1, h2 {
+    color: #A5C9CA;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 12px 0px;
+}
+
+p, ul {
+    color: #E7F6F2;
+    font-size: 1.25rem;
 }
 
 ul {
     list-style-type: none;  
     padding: 0;
+    margin-bottom: 18px;
 }
